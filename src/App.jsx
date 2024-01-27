@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+let Dataurl = `https://9pw8sg-3000.csb.app/`;
+let urlDetail = axios.get(Dataurl);
 function App() {
-  const [state, setState] = useState([]);
+  const [ST_Header, setHeader] = useState([]);
   useEffect(() => {
-    axios.get(`https://9pw8sg-3000.csb.app/`).then((res) => setState(res.data));
-  }, [setState]);
+    urlDetail.then((res) => setHeader(res.data.Header));
+  }, [setHeader]);
   return (
     <div>
       <h1>app</h1>
-      <span>{state.map((e) => e.name)}</span>
-      {state.map((person) => (
-        <li>{person.name}</li>
-      ))}
+      <span>{ST_Header.map((e) => e.CompanyName)}</span>
     </div>
   );
 }

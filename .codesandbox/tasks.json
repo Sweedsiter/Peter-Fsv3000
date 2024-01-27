@@ -11,23 +11,19 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
-      "runAtStart": false
+      "command": "yarn start"
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
-      "runAtStart": false
+      "command": "yarn build"
     },
     "test": {
       "name": "test",
-      "command": "yarn test",
-      "runAtStart": false
+      "command": "yarn test"
     },
     "eject": {
       "name": "eject",
-      "command": "yarn eject",
-      "runAtStart": false
+      "command": "yarn eject"
     },
     "dev": {
       "name": "dev",
@@ -39,13 +35,11 @@
     },
     "lint": {
       "name": "lint",
-      "command": "yarn lint",
-      "runAtStart": false
+      "command": "yarn lint"
     },
     "preview": {
       "name": "preview",
-      "command": "yarn preview",
-      "runAtStart": false
+      "command": "yarn preview"
     }
   }
 }
