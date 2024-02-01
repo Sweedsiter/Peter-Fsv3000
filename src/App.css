@@ -1,0 +1,47 @@
+.Main {
+  background-color: #f6fcfc;
+}
+:root {
+  --blue-color: #35b8be;
+  --white-color: #ffff;
+  --gray-color: gray;
+}
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 1.2rem;
+}
+a:hover {
+  border-bottom: 2px solid var(--white-color);
+  font-weight: bolder;
+}
+button {
+  width: fit-content;
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 2px solid var(--blue-color);
+  background-color: white;
+  transition: 0.2s;
+  color: var(--blue-color);
+}
+button:hover {
+  background-color: var(--blue-color);
+  border: none;
+  color: white;
+}
+.MainName {
+  margin: 0; 
+  background-color: #35b8be;
+  color: white;
+  padding: 0.6rem;
+  align-content: center;
+  text-align: center;
+  font-weight: bolder;
+  z-index:+9999;
+}

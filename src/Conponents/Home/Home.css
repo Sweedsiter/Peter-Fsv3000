@@ -1,0 +1,60 @@
+/* .Home01 Styles */
+.Home01 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.Home01 .L {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.Home01 > img {
+  width: 400px;
+  margin: 5rem 0;
+}
+
+.Home01 .L h1 {
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--blue-color);
+}
+.Home01 .L h4 {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: var(--blue-color);
+}
+.Home01 .L h4 .helf-name {
+  color: var(--gray-color);
+}
+.Home01 .L .Content {
+  margin: 1.6rem 0;
+  width: 70%;
+  float: left;
+  line-height: 2;
+  cursor: pointer;
+  color: var(--gray-color);
+}
+
+@media only screen and (max-width: 800px) {
+  .Home01 {
+    flex-direction: column;
+  }
+  .Home01 .L {
+    width: 100%;
+    align-self: center;
+    margin: 3rem 0;
+  }
+  .Home01 > img {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .Home01 .L .Content {
+    width: 100%;
+  }
+}

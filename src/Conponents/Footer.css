@@ -1,0 +1,58 @@
+.Footer {
+  padding: 2rem 8rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--blue-color);
+  position: relative;
+  bottom: 0;
+  color: var(--white-color);
+}
+.Footer > * {
+  padding: 1rem;
+  line-height: 1.8;
+  cursor: pointer;
+}
+.Footer .FT03 {
+  width: 70%;
+}
+.Footer .FT02 {
+  width: 50%;
+}
+.Footer .FT02 a,
+.Footer .FT03 a {
+  color: var(--white-color);
+}
+.Footer .FT_icon {
+}
+.Footer .FT04 .Map {
+  width: 500px;
+  border: none;
+  height: 80%;
+}
+.Footer .FT03 .socail {
+  padding: 20px 0;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.Footer .FT03 .socail a {
+  font-size: 1.7rem;
+  padding-right: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .Footer {
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+  }
+  .Footer .FT02,
+  .Footer .FT03 {
+    width: 100%;
+  }
+  .Footer .FT04 .Map {
+    width: 100%;
+    height: 300px;
+  }
+}
