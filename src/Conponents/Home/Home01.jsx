@@ -13,6 +13,7 @@ function Home01() {
   return (
     <div className="Home01">
       <div className="L">
+        {ST_Home[0]._01Company}
         <h1>{ST_Home.map((e) => e._01Company)}</h1>
         <h4>
           {ST_Home.map((e) => e._01First)}
