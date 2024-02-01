@@ -7,18 +7,16 @@ import "./App.css";
 import Header from "./Conponents/Header";
 import Home from "./Conponents/Home";
 import Footer from "./Conponents/Footer";
+let urlDetail = axios.get(`https://9pw8sg-3000.csb.app/`);
 
-let Dataurl = `https://9pw8sg-3000.csb.app/`;
-let urlDetail = axios.get(Dataurl);
 function App() {
   const [ST_Header, setHeader] = useState([]);
   const [ST_Footer, setFooter] = useState([]);
-  const [ST_Home, setHome] = useState([]);
+
   useEffect(() => {
     urlDetail.then((res) => setHeader(res.data.Header));
     urlDetail.then((res) => setFooter(res.data.Footer));
-    urlDetail.then((res) => setHome(res.data.Home));
-  }, [setHeader, setFooter, setHome]);
+  }, [setHeader, setFooter]);
 
   return (
     <div className="Main">
@@ -28,7 +26,7 @@ function App() {
         <Header ST_Header={ST_Header} />
 
         {/* Pages */}
-        <Home ST_Home={ST_Home} />
+        <Home  />
       </div>
       {/* Footer */}
       <Footer ST_Footer={ST_Footer} />

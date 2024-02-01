@@ -2,23 +2,23 @@ import React from "react";
 import "./Header.css";
 
 import "./Header.css";
+import { useEffect, useState } from "react";
 import { GoLock } from "react-icons/go";
-import styled from "styled-components";
+import axios from "axios";
+
+let Dataurl = `https://9pw8sg-3000.csb.app/`;
+let urlDetail = axios.get(Dataurl);
+
 function Header({ ST_Header }) {
-  const IMG = styled.div`
-  background-image: url(${ST_Header.map((e) => e.CompanyName)});
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-`;
+  const [Rimg, setRimg] = useState();
+  useEffect(() => {
+    urlDetail.then((res) => setRimg(res.data.Header[1].CompanyName));
+  }, [setRimg]);
 
   return (
     <header className="Header">
       <div className="L">
-        <IMG />
+        <img className="HeaderLogo" src={Rimg} />   
       </div>
       <div className="R">
         <ul>

@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-let Dataurl = `https://9pw8sg-3000.csb.app/`;
-let urlDetail = axios.get(Dataurl);
+let urlDetail = axios.get(`https://9pw8sg-3000.csb.app/`);
 
-function Home01({ ST_Home }) {
+function Home01() {
   const [Rimg, setRimg] = useState();
+  const [ST_Home, setHome] = useState([]);
   useEffect(() => {
     urlDetail.then((res) => setRimg(res.data.Home[4]._02RImage));
-  }, [setRimg]);
+    urlDetail.then((res) => setHome(res.data.Home));
+  }, []);
 
   return (
     <div className="Home01">

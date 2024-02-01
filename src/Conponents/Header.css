@@ -10,7 +10,9 @@
   /* position: fixed;
   width: 80%; */
 }
-
+.HeaderLogo {
+  width: 100%;
+}
 .Header .R .Login > * {
 }
 .Header > .L {
