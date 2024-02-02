@@ -746,6 +746,11 @@ mime-types@^2.1.12:
   dependencies:
     mime-db "1.52.0"
 
+mime@>=1.4.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/mime/-/mime-4.0.1.tgz"
+  integrity sha512-5lZ5tyrIfliMXzFtkYyekWbtRXObT9OWa8IwQ5uxTBDHucNNwniRqo0yInflj+iYi5CBa6qxadGzGarDfuEOxA==
+
 moo-server@*, moo-server@1.3.x:
   version "1.3.0"
   resolved "https://registry.npmjs.org/moo-server/-/moo-server-1.3.0.tgz"
@@ -824,6 +829,13 @@ proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
+public@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/public/-/public-0.1.5.tgz"
+  integrity sha512-ClBRai5dVUVdFzyA8w9Ip47FR8GsL5q+Zz23DazJ7WXWDq2y9zzgJqlt7ihAbptrDeLy88KcK3xqQDrLb/Tx/w==
+  dependencies:
+    mime ">=1.4.1"
 
 "react-dom@>= 16.8.0", react-dom@18.2.0:
   version "18.2.0"
