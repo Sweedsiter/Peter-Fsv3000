@@ -23,7 +23,7 @@
     "vite": "^5.0.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm start",
     "build": "tsc && vite build  && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
