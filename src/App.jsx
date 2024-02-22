@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./App.css";
 
-// Componets all
+// Componets all page
 import Header from "./Conponents/Header";
 import Home from "./Conponents/Home";
 import Footer from "./Conponents/Footer";
